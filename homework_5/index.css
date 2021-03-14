@@ -1,0 +1,42 @@
+
+.bodyhome {
+  background-image: url('./assets/images/jessica-johnston-I3G3qN9W7LI-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.bodyhome::before {
+  background-color: rgba(0,0,0,1);
+}
+
+.hometitle {
+  font-family: "Avenir";
+  font-size: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  display: flex;
+
+}
+
+.gallery__img {
+  scroll-snap-align: start;
+  margin-bottom: 10px;
+  min-width: 100vw;
+  object-fit: cover;
+
+}
+
+path {
+  fill: transparent;
+}
+
+text {
+  fill: #ff9800;
+}
