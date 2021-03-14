@@ -23,13 +23,14 @@
       <div class="shop-row2">
         <div></div>
         <div class="pick-up-toggle">
-          <a href="./PickupPage.html">PickUp</a>
+          <a class="pick-or-del" href="./PickupPage.html">PickUp</a>
         </div>
         <div class="delivery-toggle">
-          <a href="./DeliveryPage.html">Delivery</a>
+          <a class="pick-or-del" href="./DeliveryPage.html">Delivery</a>
         </div>
         <div></div>
       </div>
+      <div class="shop-page-title">Reserve Now</div>
       <div class="gallery">
         <div class="gallery_item">
           <a href="#open-modal"
@@ -67,10 +68,10 @@
           <img
             src="./assets/images/jessica-johnston-I3G3qN9W7LI-unsplash.jpg"
             class="gallery_img"
-            alt="Original Roll"
+            alt="Original (gluten free) Roll"
           />
 
-          <p class="gallery_roll_name">Original</p>
+          <p class="gallery_roll_name">Original (Gluten-Free)</p>
           <div>
             <label for="glaze">Choose Glazing:</label>
             <select name="glaze" id="glaze">
@@ -98,10 +99,10 @@
           <img
             src="./assets/images/jessica-johnston-I3G3qN9W7LI-unsplash.jpg"
             class="gallery_img"
-            alt="Original Roll"
+            alt="Blackberry Roll"
           />
 
-          <p class="gallery_roll_name">Original</p>
+          <p class="gallery_roll_name">Blackberry</p>
           <div>
             <label for="glaze">Choose Glazing:</label>
             <select name="glaze" id="glaze">
@@ -129,10 +130,10 @@
           <img
             src="./assets/images/jessica-johnston-I3G3qN9W7LI-unsplash.jpg"
             class="gallery_img"
-            alt="Original Roll"
+            alt="Pumpkin Spice Roll"
           />
 
-          <p class="gallery_roll_name">Original</p>
+          <p class="gallery_roll_name">Pumpkin Spice</p>
           <div>
             <label for="glaze">Choose Glazing:</label>
             <select name="glaze" id="glaze">
@@ -160,10 +161,10 @@
           <img
             src="./assets/images/jessica-johnston-I3G3qN9W7LI-unsplash.jpg"
             class="gallery_img"
-            alt="Original Roll"
+            alt="Walnut Roll"
           />
 
-          <p class="gallery_roll_name">Original</p>
+          <p class="gallery_roll_name">Walnut</p>
           <div>
             <label for="glaze">Choose Glazing:</label>
             <select name="glaze" id="glaze">
@@ -191,10 +192,10 @@
           <img
             src="./assets/images/jessica-johnston-I3G3qN9W7LI-unsplash.jpg"
             class="gallery_img"
-            alt="Original Roll"
+            alt="Caramel Pecan Roll"
           />
 
-          <p class="gallery_roll_name">Original</p>
+          <p class="gallery_roll_name">Caramel Pecan</p>
           <div>
             <label for="glaze">Choose Glazing:</label>
             <select name="glaze" id="glaze">
@@ -225,11 +226,19 @@
           <h1>Original</h1>
           <img
             src="./assets/images/jessica-johnston-I3G3qN9W7LI-unsplash.jpg"
-            class="gallery_img"
+            class="specific-img"
             alt="Original Roll"
           />
-          <div>
-            <p>ingredents</p>
+          <div class="ingredient-calories">
+            <div>
+              <p class="ingredient_title">Ingredients</p>
+              <ul class="ingredients">
+                <li>All Purpose Flour</li>
+                <li>Baking Powder</li>
+                <li>Butter Milk</li>
+              </ul>
+            </div>
+            <p>Total Calories: 365 cal</p>
           </div>
           <div>
             <label for="glaze">Choose Glazing:</label>
@@ -249,7 +258,8 @@
               <option value="6">6</option>
               <option value="12">12</option>
             </select>
-            <div>
+
+            <div class="submit-item">
               <input type="submit" value="Add to Cart" />
             </div>
           </div>

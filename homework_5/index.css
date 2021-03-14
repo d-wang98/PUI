@@ -1,11 +1,10 @@
-
 .bodyhome {
-  background-image: url('./assets/images/jessica-johnston-I3G3qN9W7LI-unsplash.jpg');
+  background-image: url("./assets/images/jessica-johnston-I3G3qN9W7LI-unsplash.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 .bodyhome::before {
-  background-color: rgba(0,0,0,1);
+  background-color: rgba(0, 0, 0, 1);
 }
 
 .hometitle {
@@ -22,7 +21,6 @@
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   display: flex;
-
 }
 
 .gallery_img {
@@ -33,9 +31,24 @@
   object-fit: cover;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border: 1px solid #555;
-
+}
+ul.ingredients {
+  list-style-type: circle;
+  margin: 0;
+  padding: 0px 0px 0px 20px;
 }
 
+.submit-item {
+  padding: 3%;
+  padding-top: 40px;
+  display: flex;
+  width: 94%;
+  justify-content: center;
+  align-items: center;
+}
+.ingredient_title {
+  margin-bottom: 1px;
+}
 .gallery_item {
   margin-left: 10px;
   margin-right: 10px;
@@ -43,11 +56,18 @@
 .gallery_roll_name {
   font-size: 20px;
   font-weight: bold;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+.shop-page-title {
+  font-size: 40px;
+  font-weight: bold;
+  padding-left: 0%;
 }
 
 .shop-container {
   display: grid;
-  grid-template-rows: 10vh 20vh 70vh;
+  grid-template-rows: 10vh 20vh 10vh 60vh;
 }
 .shop-top {
   display: grid;
@@ -57,6 +77,24 @@
   display: grid;
   grid-template-columns: 30vw 20vw 20vw 30vw;
 }
+
+.specific-img {
+  scroll-snap-align: start;
+  margin-bottom: 5px;
+  width: 35vw;
+  height: 20vw;
+  object-fit: cover;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 1px solid #555;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.ingredient-calories {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
 .pick-up-toggle {
   margin-top: 20%;
   margin-bottom: 20%;
@@ -64,9 +102,9 @@
   justify-content: center;
   align-items: center;
   height: 60%;
-  border: 1px solid #8B291C;
+  border: 1px solid #8b291c;
   border-width: 1px 1px 0px 0px;
-  background-color: #E8ABA7;
+  background-color: #e8aba7;
 }
 .delivery-toggle {
   margin-top: 20%;
@@ -75,9 +113,13 @@
   justify-content: center;
   align-items: center;
   height: 60%;
-  border: 1px solid #8B291C;
+  border: 1px solid #8b291c;
   border-width: 1px 0px 0px 0px;
+}
 
+.pick-or-del {
+  font-size: 25px;
+  font-weight: bold;
 }
 
 .bunbun-logo {
@@ -90,16 +132,16 @@
   text-decoration: none;
 }
 .cart {
-  display:flex;
+  display: flex;
   justify-content: right;
-  width:4vw;
-  height:4vw;
+  width: 4vw;
+  height: 4vw;
 }
 .burger {
-  display:flex;
+  display: flex;
   justify-content: right;
-  width:4vw;
-  height:4vw;
+  width: 4vw;
+  height: 4vw;
 }
 /* h1 {
   font-family:"Avenir";
@@ -115,7 +157,7 @@ a {
   font-family:"Avenir";
 } */
 label {
-  color:#8B291C;
+  color: #8b291c;
 }
 .modal-window {
   position: fixed;
@@ -142,8 +184,7 @@ label {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 2em;
-  background: #F8F0BB;
-
+  background: #f8f0bb;
 }
 .modal-window header {
   font-weight: bold;
@@ -167,7 +208,8 @@ label {
   color: black;
 }
 /* Demo Styles */
-html, body {
+html,
+body {
   height: 100%;
 }
 html {
@@ -175,9 +217,9 @@ html {
   line-height: 1.4;
 }
 body {
-  font-family:"Avenir";
-  background-image: #F6F6F6;
-  color:#8B291C;
+  font-family: "Avenir";
+  background-image: #f6f6f6;
+  color: #8b291c;
 }
 
 a {
