@@ -25,18 +25,173 @@
 
 }
 
-.gallery__img {
+.gallery_img {
   scroll-snap-align: start;
-  margin-bottom: 10px;
-  min-width: 100vw;
+  margin-bottom: 5px;
+  width: 20vw;
+  height: 20vw;
   object-fit: cover;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 1px solid #555;
 
 }
 
-path {
-  fill: transparent;
+.gallery_item {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.gallery_roll_name {
+  font-size: 20px;
+  font-weight: bold;
 }
 
-text {
-  fill: #ff9800;
+.shop-container {
+  display: grid;
+  grid-template-rows: 10vh 20vh 70vh;
+}
+.shop-top {
+  display: grid;
+  grid-template-columns: 45vw 10vw 35vw 5vw 5vw;
+}
+.shop-row2 {
+  display: grid;
+  grid-template-columns: 30vw 20vw 20vw 30vw;
+}
+.pick-up-toggle {
+  margin-top: 20%;
+  margin-bottom: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60%;
+  border: 1px solid #8B291C;
+  border-width: 1px 1px 0px 0px;
+  background-color: #E8ABA7;
+}
+.delivery-toggle {
+  margin-top: 20%;
+  margin-bottom: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60%;
+  border: 1px solid #8B291C;
+  border-width: 1px 0px 0px 0px;
+
+}
+
+.bunbun-logo {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.cart {
+  display:flex;
+  justify-content: right;
+  width:4vw;
+  height:4vw;
+}
+.burger {
+  display:flex;
+  justify-content: right;
+  width:4vw;
+  height:4vw;
+}
+/* h1 {
+  font-family:"Avenir";
+}
+
+p {
+  font-family:"Avenir";
+}
+label {
+  font-family:"Avenir";
+}
+a {
+  font-family:"Avenir";
+} */
+label {
+  color:#8B291C;
+}
+.modal-window {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.85);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.2s;
+}
+.modal-window:target {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+.modal-window > div {
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2em;
+  background: #F8F0BB;
+
+}
+.modal-window header {
+  font-weight: bold;
+}
+.modal-window h1 {
+  font-size: 150%;
+  margin: 0 0 15px;
+}
+.modal-close {
+  color: #aaa;
+  line-height: 50px;
+  font-size: 80%;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 70px;
+  text-decoration: none;
+}
+.modal-close:hover {
+  color: black;
+}
+/* Demo Styles */
+html, body {
+  height: 100%;
+}
+html {
+  font-size: 18px;
+  line-height: 1.4;
+}
+body {
+  font-family:"Avenir";
+  background-image: #F6F6F6;
+  color:#8B291C;
+}
+
+a {
+  color: inherit;
+}
+.container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.modal-window > div {
+  border-radius: 1rem;
+}
+.modal-window div:not(:last-of-type) {
+  margin-bottom: 15px;
 }
