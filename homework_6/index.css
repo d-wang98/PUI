@@ -1,0 +1,383 @@
+.bodyhome {
+  background-image: url("./assets/images/jessica-johnston-I3G3qN9W7LI-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.bodyhome::before {
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.hometitle {
+  font-family: "Avenir";
+  font-size: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  display: flex;
+}
+
+.gallery_img {
+  scroll-snap-align: start;
+  margin-bottom: 5px;
+  width: 21vw;
+  height: 21vw;
+  object-fit: cover;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 1px solid #555;
+}
+.shop_placement {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.shop_button {
+  padding: 2%;
+  background-color: #e8aba7;
+  border-radius: 20px;
+  border: 1px solid #555;
+  opacity: 90%;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 30px;
+}
+ul.ingredients {
+  list-style-type: circle;
+  margin: 0;
+  padding: 0px 0px 0px 20px;
+}
+
+.submit-item {
+  padding: 3%;
+  padding-top: 40px;
+  display: flex;
+  width: 94%;
+  justify-content: center;
+  align-items: center;
+}
+.ingredient_title {
+  margin-bottom: 1px;
+}
+.gallery_item {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.gallery_roll_name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+.shop-page-title {
+  font-size: 40px;
+  font-weight: bold;
+  padding-left: 0%;
+}
+
+.shop-container {
+  display: grid;
+  grid-template-rows: 10vh 20vh 10vh 60vh;
+}
+.shop-top {
+  display: grid;
+  grid-template-columns: 45vw 10vw 35vw 5vw 5vw;
+}
+.shop-row2 {
+  display: grid;
+  grid-template-columns: 30vw 20vw 20vw 30vw;
+}
+
+.specific-img {
+  scroll-snap-align: start;
+  margin-bottom: 5px;
+  width: 35vw;
+  height: 20vw;
+  object-fit: cover;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 1px solid #555;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.ingredient-calories {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.pick-up-toggle {
+  margin-top: 20%;
+  margin-bottom: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60%;
+  border: 1px solid #8b291c;
+  border-width: 1px 1px 0px 0px;
+  background-color: #e8aba7;
+}
+.delivery-toggle {
+  margin-top: 20%;
+  margin-bottom: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60%;
+  border: 1px solid #8b291c;
+  border-width: 1px 0px 0px 0px;
+}
+.pick-up-toggle2 {
+  margin-top: 20%;
+  margin-bottom: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60%;
+  border: 1px solid #8b291c;
+  border-width: 1px 1px 0px 0px;
+}
+.delivery-toggle2 {
+  margin-top: 20%;
+  margin-bottom: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60%;
+  border: 1px solid #8b291c;
+  border-width: 1px 0px 0px 0px;
+  background-color: #e8aba7;
+}
+
+.pick-or-del {
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.order-title {
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  padding-top: 20vh;
+}
+.bunbun-logo {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.cart {
+  width: 100%;
+  height: 100%;
+}
+.cart-container {
+  display: flex;
+  justify-content: right;
+  width: 5vw;
+  height: 4vw;
+}
+.burger {
+  display: flex;
+  justify-content: right;
+  width: 4vw;
+  height: 4vw;
+}
+.cart-element {
+  overflow-y: auto;
+  height: 50%;
+  border: 1px solid #8b291c;
+  border-width: 1px 0px 0px 0px;
+  display:grid;
+  grid-template-columns: 10vw 10vw 10vw 10vw 10vw;
+}
+.shopping-cart {
+  margin: auto;
+  width: 50vw;
+}
+.cart-img {
+  /* align-items: center; */
+  width: 50px;
+  height: 50px;
+  margin: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 1px solid #555;
+
+}
+
+.cart-flavor {
+  display: flex;
+  align-items: center;
+}
+.cart-amount {
+  display: flex;
+  align-items: center;
+}
+.cart-glazing {
+  display: flex;
+  align-items: center;
+}
+#cart-list {
+  overflow-y: auto;
+}
+#itemCounter {
+
+}
+.cart-delete {
+  width: 30px;
+  height: 30px;
+  margin:auto;
+}
+.cart-checkout {
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+}
+.cart-title {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  font-size: 30px;
+}
+
+
+
+/* h1 {
+  font-family:"Avenir";
+}
+
+p {
+  font-family:"Avenir";
+}
+label {
+  font-family:"Avenir";
+}
+a {
+  font-family:"Avenir";
+} */
+label {
+  color: #8b291c;
+}
+.modal-window {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.85);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.2s;
+}
+.modal-window:target {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+.modal-window > div {
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2em;
+  background: #f8f0bb;
+}
+.modal-window header {
+  font-weight: bold;
+}
+.modal-window h1 {
+  font-size: 150%;
+  margin: 0 0 15px;
+}
+.modal-close {
+  color: #aaa;
+  line-height: 50px;
+  font-size: 80%;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 70px;
+  text-decoration: none;
+}
+.modal-close:hover {
+  color: black;
+}
+/* Demo Styles */
+html,
+body {
+  height: 100%;
+}
+html {
+  font-size: 18px;
+  line-height: 1.4;
+}
+body {
+  font-family: "Avenir";
+  background-color: #f6f6f6;
+  color: #8b291c;
+}
+
+a {
+  color: inherit;
+}
+.container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.modal-window > div {
+  border-radius: 1rem;
+}
+.modal-window div:not(:last-of-type) {
+  margin-bottom: 15px;
+}
+button {
+  border: 1px solid #8b291c;
+  border-radius: 3px;
+  font-family: "Avenir";
+  color: #8b291c;
+  background-color: #f6f6f6;
+}
+button:hover {
+  background-color: #e0e0e0;
+  cursor: pointer;
+  cursor: hand;
+}
+
+input[type="submit"] {
+  border: 1px solid #8b291c;
+  border-radius: 3px;
+  font-family: "Avenir";
+  color: #8b291c;
+  background-color: #f6f6f6;
+}
+
+select {
+  border: 1px solid #8b291c;
+  border-radius: 3px;
+  font-family: "Avenir";
+  color: #8b291c;
+  background-color: #f6f6f6;
+}

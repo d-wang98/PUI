@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>homepage</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body onload="pageOnLoad()">
+    <div class="shop-container">
+      <div class="shop-top">
+        <div></div>
+        <div>
+          <a class="bunbun-logo" href="./homepage.html">bun</a>
+          <a class="bunbun-logo" href="./homepage.html">bun</a>
+        </div>
+        <div></div>
+        <div class="cart-container">
+          <a href="./Cart.html">
+            <img
+              class="cart"
+              src="./assets/icons/shopping_cart.png"
+              alt="cart icon"
+            />
+          </a>
+          <div id="itemCounter"></div>
+        </div>
+        <div>
+          <img
+            class="burger"
+            src="./assets/icons/burger.png"
+            alt="burger icon"
+          />
+        </div>
+      </div>
+      <div class="shop-row2">
+        <div></div>
+        <div class="pick-up-toggle">
+          <a class="pick-or-del" href="./PickupPage.html">PickUp</a>
+        </div>
+        <div class="delivery-toggle">
+          <a class="pick-or-del" href="./DeliveryPage.html">Delivery</a>
+        </div>
+        <div></div>
+      </div>
+      <div class="shop-page-title">Reserve Now</div>
+      <div class="gallery">
+        <div class="gallery_item">
+          <a href="#open-modal"
+            ><img
+              src="./assets/images/original.png"
+              class="gallery_img"
+              alt="Original Roll"
+          /></a>
+
+          <p class="gallery_roll_name">Original</p>
+          <div>
+            <label for="glaze1">Choose Glazing:</label>
+            <select name="Glaze" id="glaze1">
+              <option value="None">None</option>
+              <option value="Sugar-milk">Sugar-milk</option>
+              <option value="Vanilla-milk">Vanilla-milk</option>
+              <option value="Double-chocolate">Double-chocolate</option>
+            </select>
+          </div>
+          <div>
+            <label for="roll_count1">Number of Rolls(0/1/3/6/12):</label>
+            <select name="Roll_count" id="roll_count1">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="3">3</option>
+              <option value="6">6</option>
+              <option value="12">12</option>
+            </select>
+            <div>
+              <button
+                type="button"
+                onclick="addToCart('Original Roll', document.getElementById('glaze1').value, document.getElementById('roll_count1').value, './assets/images/original.png')"
+              >
+                Add To Cart
+              </button>
+            </div>
+            <script>
+              console.log(
+                document.getElementById("roll_count1").selectedOptions[0]
+              );
+            </script>
+          </div>
+        </div>
+        <div class="gallery_item">
+          <img
+            src="./assets/images/original.png"
+            class="gallery_img"
+            alt="Original (gluten free) Roll"
+          />
+
+          <p class="gallery_roll_name">Original (Gluten-Free)</p>
+          <div>
+            <label for="glaze2">Choose Glazing:</label>
+            <select name="Glaze" id="glaze2">
+              <option value="None">None</option>
+              <option value="Sugar-milk">Sugar-milk</option>
+              <option value="Vanilla-milk">Vanilla-milk</option>
+              <option value="Double-chocolate">Double-chocolate</option>
+            </select>
+          </div>
+          <div>
+            <label for="roll_count2">Number of Rolls(0/1/3/6/12):</label>
+            <select name="Roll_count" id="roll_count2">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="3">3</option>
+              <option value="6">6</option>
+              <option value="12">12</option>
+            </select>
+            <div>
+              <button
+                type="button"
+                onclick="addToCart('Original (Gluten-Free)', document.getElementById('glaze2').value, document.getElementById('roll_count2').value, './assets/images/original.png')"
+              >
+                Add To Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="gallery_item">
+          <img
+            src="./assets/images/blackberry.png"
+            class="gallery_img"
+            alt="Blackberry Roll"
+          />
+
+          <p class="gallery_roll_name">Blackberry</p>
+          <div>
+            <label for="glaze3">Choose Glazing:</label>
+            <select name="Glaze" id="glaze3">
+              <option value="None">None</option>
+              <option value="Sugar-milk">Sugar-milk</option>
+              <option value="Vanilla-milk">Vanilla-milk</option>
+              <option value="Double-chocolate">Double-chocolate</option>
+            </select>
+          </div>
+          <div>
+            <label for="roll_count3">Number of Rolls(0/1/3/6/12):</label>
+            <select name="Roll_count" id="roll_count3">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="3">3</option>
+              <option value="6">6</option>
+              <option value="12">12</option>
+            </select>
+            <div>
+              <button
+                type="button"
+                onclick="addToCart('Blackberry', document.getElementById('glaze3').value, document.getElementById('roll_count3').value, './assets/images/blackberry.png')"
+              >
+                Add To Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="gallery_item">
+          <img
+            src="./assets/images/pumpkin.png"
+            class="gallery_img"
+            alt="Pumpkin Spice Roll"
+          />
+
+          <p class="gallery_roll_name">Pumpkin Spice</p>
+          <div>
+            <label for="glaze4">Choose Glazing:</label>
+            <select name="Glaze" id="glaze4">
+              <option value="None">None</option>
+              <option value="Sugar-milk">Sugar-milk</option>
+              <option value="Vanilla-milk">Vanilla-milk</option>
+              <option value="Double-chocolate">Double-chocolate</option>
+            </select>
+          </div>
+          <div>
+            <label for="roll_count4">Number of Rolls(0/1/3/6/12):</label>
+            <select name="Roll_count" id="roll_count4">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="3">3</option>
+              <option value="6">6</option>
+              <option value="12">12</option>
+            </select>
+            <button
+              type="button"
+              onclick="addToCart('Pumpkin Spice', document.getElementById('glaze4').value, document.getElementById('roll_count4').value, './assets/images/pumpkin.png')"
+            >
+              Add To Cart
+            </button>
+          </div>
+        </div>
+        <div class="gallery_item">
+          <img
+            src="./assets/images/walnut.png"
+            class="gallery_img"
+            alt="Walnut Roll"
+          />
+
+          <p class="gallery_roll_name">Walnut</p>
+          <div>
+            <label for="glaze5">Choose Glazing:</label>
+            <select name="Glaze" id="glaze5">
+              <option value="None">None</option>
+              <option value="Sugar-milk">Sugar-milk</option>
+              <option value="Vanilla-milk">Vanilla-milk</option>
+              <option value="Double-chocolate">Double-chocolate</option>
+            </select>
+          </div>
+          <div>
+            <label for="roll_count5">Number of Rolls(0/1/3/6/12):</label>
+            <select name="Roll_count" id="roll_count5">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="3">3</option>
+              <option value="6">6</option>
+              <option value="12">12</option>
+            </select>
+            <button
+              type="button"
+              onclick="addToCart('Walnut', document.getElementById('glaze5').value, document.getElementById('roll_count5').value, './assets/images/walnut.png')"
+            >
+              Add To Cart
+            </button>
+          </div>
+        </div>
+        <div class="gallery_item">
+          <img
+            src="./assets/images/pecan.png"
+            class="gallery_img"
+            alt="Caramel Pecan Roll"
+          />
+
+          <p class="gallery_roll_name">Caramel Pecan</p>
+          <div>
+            <label for="glaze6">Choose Glazing:</label>
+            <select name="Glaze" id="glaze6">
+              <option value="None">None</option>
+              <option value="Sugar-milk">Sugar-milk</option>
+              <option value="Vanilla-milk">Vanilla-milk</option>
+              <option value="Double-chocolate">Double-chocolate</option>
+            </select>
+          </div>
+          <div>
+            <label for="roll_count6">Number of Rolls(0/1/3/6/12):</label>
+            <select name="Roll_count" id="roll_count6">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="3">3</option>
+              <option value="6">6</option>
+              <option value="12">12</option>
+            </select>
+            <button
+              type="button"
+              onclick="addToCart('Caramel Pecan', document.getElementById('glaze6').value, document.getElementById('roll_count6').value, './assets/images/pecan.png')"
+            >
+              Add To Cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="open-modal" class="modal-window">
+        <div>
+          <a href="#" title="Close" class="modal-close">X</a>
+          <h1>Original</h1>
+          <img
+            src="./assets/images/original.png"
+            class="specific-img"
+            alt="Original Roll"
+          />
+          <div class="ingredient-calories">
+            <div>
+              <p class="ingredient_title">Ingredients</p>
+              <ul class="ingredients">
+                <li>All Purpose Flour</li>
+                <li>Baking Powder</li>
+                <li>Butter Milk</li>
+              </ul>
+            </div>
+            <p>Total Calories: 365 cal</p>
+          </div>
+          <div>
+            <label for="glaze">Choose Glazing:</label>
+            <select name="Glaze" id="glaze">
+              <option value="None">None</option>
+              <option value="Sugar-milk">Sugar-milk</option>
+              <option value="Vanilla-milk">Vanilla-milk</option>
+              <option value="Double-chocolate">Double-chocolate</option>
+            </select>
+          </div>
+          <div>
+            <label for="roll_count">Number of Rolls(0/1/3/6/12):</label>
+            <select name="Roll_count" id="roll_count">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="3">3</option>
+              <option value="6">6</option>
+              <option value="12">12</option>
+            </select>
+
+            <div class="submit-item">
+              <input type="submit" value="Add to Cart" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
